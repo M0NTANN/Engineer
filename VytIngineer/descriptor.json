@@ -1,0 +1,16 @@
+﻿{
+  "Descriptor": {
+    "UId": "faad11a7-d74c-4b7f-22bb-03c28134ed9c",
+    "Name": "VytIngineer",
+    "BPMSoftVersion": "1.2.0",
+    "ModifiedOnUtc": "\/Date(1698060617000)\/",
+    "Maintainer": "StudVyat",
+    "DependsOn": [
+      {
+        "UId": "fe1effeb-74f2-42c5-b5e1-dfe0313b86bf",
+        "PackageVersion": "1.0.0",
+        "Name": "Constructor"
+      }
+    ]
+  }
+}
