@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "db690124-7c36-4b74-a95b-de5f977570ef",
+    "Name": "UsrCompInFolder",
+    "ModifiedOnUtc": "\/Date(1699273890000)\/",
+    "Parent": {
+      "UId": "4f63bafb-e9e7-4082-b92e-66b97c14017c",
+      "Name": "BaseItemInFolder"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Компьютеры в группе"
+  }
+}

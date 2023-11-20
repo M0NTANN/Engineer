@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "ee87c97d-eaef-4ced-aba4-58dd08f752b6",
+    "Name": "UsrCompFile",
+    "ModifiedOnUtc": "\/Date(1699273885000)\/",
+    "Parent": {
+      "UId": "556c5867-60a7-4456-aae1-a57a122bef70",
+      "Name": "File"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Файл и ссылка объекта Компьютеры"
+  }
+}

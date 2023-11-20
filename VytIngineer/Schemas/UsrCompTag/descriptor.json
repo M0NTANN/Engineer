@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "dee65e81-f9e1-4758-9f91-a4ab3abfabbe",
+    "Name": "UsrCompTag",
+    "ModifiedOnUtc": "\/Date(1699273893000)\/",
+    "Parent": {
+      "UId": "9e3f203c-e905-4de5-9468-335b193f2439",
+      "Name": "BaseTag"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тег раздела Компьютеры"
+  }
+}

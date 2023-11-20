@@ -1,0 +1,10 @@
+﻿{
+  "SqlScript": {
+    "UId": "f486c6e2-a5db-9a92-3567-94b376257866",
+    "Name": "Test1",
+    "DBEngineType": 0,
+    "InstallType": 1,
+    "ModifiedOnUtc": "\/Date(1699263592000)\/",
+    "DependsOn": []
+  }
+}

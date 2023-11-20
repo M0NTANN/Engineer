@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Компьютеры" />
+			<Item Name="Columns.UsrCategories.Caption" Value="Категория" />
+			<Item Name="Columns.UsrComps.Caption" Value="Компьютеры" />
+			<Item Name="Columns.UsrLookup1.Caption" Value="Категория ПК" />
+			<Item Name="Columns.UsrName.Caption" Value="Название" />
+			<Item Name="Columns.UsrNameComp.Caption" Value="Название 2" />
+			<Item Name="Columns.UsrNotes.Caption" Value="Заметки" />
+			<Item Name="Columns.UsrPrice.Caption" Value="Цена 2" />
+			<Item Name="Columns.UsrPriceInt.Caption" Value="Цена" />
+			<Item Name="Columns.UsrProc.Caption" Value="Процессор" />
+			<Item Name="Columns.UsrType.Caption" Value="Тип" />
+			<Item Name="Columns.UsrVidCard.Caption" Value="Видеокарта" />
+			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+		</Items>
+	</Group>
+</Resources>

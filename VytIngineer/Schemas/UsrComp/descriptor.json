@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "3cd8b956-e2a5-47cc-b876-6d5ffa87a6dd",
+    "Name": "UsrComp",
+    "ModifiedOnUtc": "\/Date(1700425971000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Компьютеры"
+  }
+}

@@ -1,0 +1,47 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "7b193f3b-2a2e-4c4a-810e-6ca2d58f22c4"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "GridSettings_VwSysSchemaInfoForLookups"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJrZXkiOiJHcmlkU2V0dGluZ3NfVndTeXNTY2hlbWFJbmZvRm9yTG9va3VwcyIsImlzVGlsZWQiOmZhbHNlLCJsaXN0ZWRDb2x1bW5zQ29uZmlnIjoiW3tcImNvbHNcIjoyNCxcImtleVwiOlt7XCJuYW1lXCI6e1wiYmluZFRvXCI6XCJDYXB0aW9uXCJ9fV0sXCJtZXRhUGF0aFwiOlwiQ2FwdGlvblwiLFwib3JkZXJEaXJlY3Rpb25cIjoxLFwib3JkZXJQb3NpdGlvblwiOjB9XSIsInRpbGVkQ29sdW1uc0NvbmZpZyI6Iltbe1wiY29sc1wiOjI0LFwia2V5XCI6W3tcImNhcHRpb25cIjpcItCX0LDQs9C+0LvQvtCy0L7QulwiLFwibmFtZVwiOntcImJpbmRUb1wiOlwiQ2FwdGlvblwifSxcInR5cGVcIjpcInRpdGxlXCJ9XSxcIm1ldGFQYXRoXCI6XCJDYXB0aW9uXCIsXCJvcmRlckRpcmVjdGlvblwiOjEsXCJvcmRlclBvc2l0aW9uXCI6MH1dXSIsImNhcHRpb25zQ29uZmlnIjoiW3tcImNvbHNcIjoyNCxcImNvbHVtbk5hbWVcIjpcIkNhcHRpb25cIixcIm5hbWVcIjpcItCX0LDQs9C+0LvQvtCy0L7QulwiLFwic29ydENvbHVtbkRpcmVjdGlvblwiOjF9XSJ9"
+        },
+        {
+          "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+          "Value": "\/Date(1699285946637+0300)\/"
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "1a778e3f-0a8e-e111-84a3-00155d054c03",
+          "DisplayValue": "ru-RU"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "99434b1d-3439-49d7-8667-ca01ddab9cc0",
+    "Name": "UsrComp352373e8Section",
+    "ModifiedOnUtc": "\/Date(1699273875000)\/",
+    "Parent": {
+      "UId": "7912fb69-4fee-429f-8b23-93943c35d66d",
+      "Name": "BaseSectionV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема раздела: \"Компьютеры\""
+  }
+}
