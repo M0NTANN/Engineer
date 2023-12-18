@@ -1,4 +1,4 @@
-define("UsrComp2Page", [], function() {
+define("UsrComp2Page", ["UsrEventConstants"], function(UsrEventConstants) {
 	return {
 		entitySchemaName: "UsrComp",
 		attributes: {},
@@ -10,6 +10,14 @@ define("UsrComp2Page", [], function() {
 				"filter": {
 					"masterColumn": "Id",
 					"detailColumn": "UsrComp"
+				}
+			},
+			"UsrSchema11e27518Detailf5d589a6": {
+				"schemaName": "UsrSchema11e27518Detail",
+				"entitySchemaName": "Usr_Foto_PC",
+				"filter": {
+					"detailColumn": "UsrUsrComp",
+					"masterColumn": "Id"
 				}
 			}
 		}/**SCHEMA_DETAILS*/,
@@ -39,9 +47,89 @@ define("UsrComp2Page", [], function() {
 				}
 			}
 		}/**SCHEMA_BUSINESS_RULES*/,
-		methods: {},
+		methods: {
+			
+		getActions: function() {
+        /* Вызов базовой реализации метода для получения проиниализированных действий страницы. */
+        let actions = this.callParent(arguments);
+        /* Добавление линии-разделителя между вкладками действий. */
+        actions.addItem(this.getButtonMenuItem({
+          Type: "BPMSoft.MenuSeparator",
+          Caption: ""
+        }));
+        /* Добавление кастомного пункта в список действий. */
+        actions.addItem(this.getButtonMenuItem({
+          /* Привязка заголовка действия к локализуемой строке. */
+          "Tag": "myActionClick",
+          "Caption": {"bindTo": "Resources.Strings.MyActionCaption"},
+          "Enabled": {"bindTo": "getMyButtonEnabled"}
+        }));
+		actions.addItem(this.getButtonMenuItem({
+          /* Привязка заголовка действия к локализуемой строке. */
+          "Tag": "myActionClick",
+          "Caption": {"bindTo": "asdasd"},
+          "Enabled": {"bindTo": "isEventNotCanceled"}
+        }));
+        /* Возвращение коллекции действий страницы. */
+        return actions;
+      },
+          
+      getMyButtonEnabled: function(){
+		  
+				
+            return true;
+          },
+      
+          myActionClick: function(){
+			 
+            BPMSoft.showInformation(
+                Ext.String.format(
+                this.get("Resources.Strings.MyActionMessage"),
+                new Date().toLocaleString())
+        );        
+      },
+			isEventNotCanceled : function(f) {
+				if(f == 3){
+
+					return false;}
+				else{
+
+					return true;}
+					
+	                  },
+			
+			onCancelEventClick : function(){
+				this.isEventNotCanceled(3);
+			}
+  },
+
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
+			{
+				"operation": "set",
+				"name": "UsrNamefsasa",
+				"values": {"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "ProfileContainer"
+					},
+	                              /* Тип добавляемого элемента — кнопка. */
+	                              "itemType": BPMSoft.ViewItemType.BUTTON,
+	                              /* Привязка заголовка кнопки к локализуемой строке схемы. */
+	                              "caption": { bindTo: "Resources.Strings.UsrCancelEventButton" },
+	                              /* Привязка метода-обработчика нажатия кнопки. */
+	                              "click": { bindTo: "onCancelEventClick" },
+	                              /* Привязка свойства доступности кнопки. */
+	                              "enabled": { bindTo: "isEventNotCanceled" },
+	                              /* Стиль отображения кнопки. */
+	                              "style": BPMSoft.controls.ButtonEnums.style.DEFAULT
+	                        },
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 1
+			},
 			{
 				"operation": "insert",
 				"name": "UsrName8fa0046c-986f-4557-9e80-22b09b7e5b26",
@@ -168,6 +256,17 @@ define("UsrComp2Page", [], function() {
 				"values": {
 					"order": 0
 				}
+			},
+			{
+				"operation": "insert",
+				"name": "UsrSchema11e27518Detailf5d589a6",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "ESNTab",
+				"propertyName": "items",
+				"index": 1
 			}
 		]/**SCHEMA_DIFF*/
 	};

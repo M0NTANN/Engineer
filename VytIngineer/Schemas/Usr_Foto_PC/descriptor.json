@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "02bb3f51-c41f-490c-8c55-6c40c61b9353",
+    "Name": "Usr_Foto_PC",
+    "ModifiedOnUtc": "\/Date(1700482097000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Фотография ПК "
+  }
+}
