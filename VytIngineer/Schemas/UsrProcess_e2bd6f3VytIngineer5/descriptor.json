@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "daefc363-c25b-4c63-8b41-c218a97dd96f",
+    "Name": "UsrProcess_e2bd6f3VytIngineer5",
+    "ModifiedOnUtc": "\/Date(1703946138000)\/",
+    "Parent": {
+      "UId": "de4408d7-b1bf-4b2d-a897-939b2639e097",
+      "Name": "UsrProcess_e2bd6f3"
+    },
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Бизнес-процесс 1"
+  }
+}

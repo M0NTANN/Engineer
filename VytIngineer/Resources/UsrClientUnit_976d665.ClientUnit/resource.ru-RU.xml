@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Тест страница" />
+			<Item Name="Parameters.1a021052-0702-495a-ac57-9907aa7b3d02.Caption" Value="ФИО" />
+			<Item Name="Parameters.917e5e77-f091-43c6-8065-27ed8d36d17a.Caption" Value="Фамилия" />
+			<Item Name="Parameters.a3a8615a-31cd-4b7f-88d3-7f4871ed2c44.Caption" Value="Отчество" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Value.c4841740-ff8c-406f-8626-1c78f78608bf.Caption" Value="Закрыть" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Value.f073e66a-36ec-47d7-9c6a-e5952dbf05a3.Caption" Value="Сохранить" />
+			<Item Name="Parameters.d0dd1280-d3e1-41f7-bcb7-c5e8556308db.Caption" Value="Имя" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Тест задание" />
+			<Item Name="LocalizableStrings.ClosePageButtonCaption.Value" Value="Отмена" />
+			<Item Name="Parameters.5550e00f-db7d-45d6-a9bf-e77fb5b3ce57.Caption" Value="Фамилия" />
+			<Item Name="Parameters.b3665cf8-6444-4c4a-a2b0-53ad9cea3712.Caption" Value="Имя" />
+			<Item Name="Parameters.c336b559-bf87-431c-ad92-cf97a00b35d5.Caption" Value="Отчество" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Value.c4841740-ff8c-406f-8626-1c78f78608bf.Caption" Value="Отмена" />
+			<Item Name="Parameters.c49bd85e-159a-49ee-b10a-3c3bca63d7d5.Value.f073e66a-36ec-47d7-9c6a-e5952dbf05a3.Caption" Value="Сохранить" />
+		</Items>
+	</Group>
+</Resources>

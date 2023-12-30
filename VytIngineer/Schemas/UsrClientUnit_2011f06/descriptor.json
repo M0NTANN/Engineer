@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "59f42428-7d22-4d11-b4ca-9f96d26c7c7a",
+    "Name": "UsrClientUnit_2011f06",
+    "ModifiedOnUtc": "\/Date(1703944270000)\/",
+    "Parent": {
+      "UId": "5826ff24-46c6-4169-9223-2aaad9ec2e18",
+      "Name": "BasePageSimpleProcessTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Тест задание"
+  }
+}
