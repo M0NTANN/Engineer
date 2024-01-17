@@ -11,7 +11,12 @@ define("UsrComp2Page", [], function() {
         dataValueType: BPMSoft.DataValueType.BOOLEAN,
         type: BPMSoft.ViewModelColumnType.VIRTUAL_COLUMN,
         value: true
-      }
+      },
+      "alllCount": {
+        dataValueType: BPMSoft.DataValueType.INTEGER,
+        type: BPMSoft.ViewModelColumnType.VIRTUAL_COLUMN,
+        value: 0
+      },
 		},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{
@@ -59,7 +64,9 @@ define("UsrComp2Page", [], function() {
 			}
 		}/**SCHEMA_BUSINESS_RULES*/,
 		methods: {
+            
 			save: function(){
+                
       //this.isNew - new card
       this.set("IsNew",this.isNew);
       this.callParent(arguments);
@@ -75,22 +82,25 @@ define("UsrComp2Page", [], function() {
       this.set("VisibleButton",true);
       console.log('метод showButton');
     },	
-			onSaved: function() {
-      this.callParent(arguments);
-      
-      console.log('метод onSaved');
-      
-      console.log(this.get('UsrSchema11e27518Detail'));
-	  var idComp = this.get('Id').toString();
-      console.log(idComp);
-      var esqQuery = Ext.create('BPMSoft.EntitySchemaQuery', {
-    rootSchemaName: "Usr_Foto_PC"
-});
-       	  esqQuery.addColumn("UsrUsrComp");
+
+    sett: function(){
+            this.set("alllCount", 3);
+    },
+	onSaved: function() {
+        var allCount = 0;
+        
+        this.callParent(arguments);
+       // console.log('метод onSaved');
+        var idComp = this.get('Id').toString();
+        //console.log(idComp);
+        var esqQuery = Ext.create('BPMSoft.EntitySchemaQuery', {
+        rootSchemaName: "Usr_Foto_PC" 
+    });
+       	esqQuery.addColumn("UsrUsrComp");
 		var filter = esqQuery.createColumnFilterWithParameter(
-			BPMSoft.ComparisonType.EQUAL, "UsrUsrComp", idComp);
-    esqQuery.filters.addItem(filter);
-			var count = 0;	
+		BPMSoft.ComparisonType.EQUAL, "UsrUsrComp", idComp);
+        esqQuery.filters.addItem(filter);
+		var count = 0;	
 		esqQuery.getEntityCollection(function(response){
 			var text = "";
 			
@@ -109,16 +119,16 @@ define("UsrComp2Page", [], function() {
 						query1.execute();
 						
 						
-						console.log("delete: " + text); 
+						//console.log("delete: " + text); 
 						count = count + 1;
 					}else{
 						var textt = item.values.Id;
-						console.log(textt); 
+						//console.log(textt); 
 						count = count + 1;	
 					}
 					
 				}, this);
-				console.log(count);
+				//console.log(count);
 				while(count < 3){
 					var insert = Ext.create('BPMSoft.InsertQuery', {
 						rootSchemaName: "Usr_Foto_PC"
@@ -135,8 +145,84 @@ define("UsrComp2Page", [], function() {
 				}
 			}
 		}, this);
-		 
+
+
+
+		var esqQueryComp = Ext.create('BPMSoft.EntitySchemaQuery', {
+            rootSchemaName: "UsrComp" 
+        }); 
+        esqQueryComp.addColumn("Id");
+        esqQueryComp.addColumn("UsrName");
+
+        //console.log(esqQueryComp);
+        
+        
+        
+        esqQueryComp.getEntityCollection(function(response2){
+            if (response2.success){
+                var listNmaeComp = []
+            BPMSoft.each(response2.collection.getItems(), function(item2){
+                idComp = item2.values.Id;
+                
+                //console.log(idComp);
+                
+                
+                
+
+                var esqQueryCount = Ext.create('BPMSoft.EntitySchemaQuery', {
+                    rootSchemaName: "Usr_Foto_PC" 
+                });
+                       esqQueryCount.addColumn("UsrUsrComp");
+                    var filterCount = esqQueryCount.createColumnFilterWithParameter(
+                    BPMSoft.ComparisonType.EQUAL, "UsrUsrComp", idComp);
+                    esqQueryCount.filters.addItem(filterCount);
+                var rr;
+                async function f(){
+                esqQueryCount.getEntityCollection(function(response3){
+                    
+                    var countFoto = 0;
+                    
+                    if(response3.success){
+                        BPMSoft.each(response3.collection.getItems(), function(item3){
+                                countFoto = countFoto + 1;
+                        }, this);
+                        
+                        if (countFoto == 3){
+                        allCount = allCount + 1;
+                        listNmaeComp.push(item2.values.UsrName);
+                        //console.log("1=" + allCount);
+                    }  
+                    }
+                    
+                    console.log("2=" +allCount);
+
+                    var text = "";
+                    text += "Количество компьютеров с тремя записями в деталях: " + allCount + "\n";
+                    listNmaeComp.forEach(element => {
+                        text += "- " + element + "\n";
+                    });
+                    BPMSoft.showInformation(text);
+
+                    return allCount;
+                    
+                }, this);
+                console.log(rr);
+                console.log("3=" +allCount);
+            }
+            f();
+                //console.log("3=" +allCount);
+
+            }, this); //console.log("4=" +allCount);
+        }
+ //console.log("5=" +allCount);
+        }, this)
+
+        //console.log("6=" +allCount);
+
+        
     },
+    
+    
 			getMyButtonEnable: function(){
 		  
 				
